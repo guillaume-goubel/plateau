@@ -1,0 +1,7 @@
+#main-banner-section{
+    background: url(../images/header.jpg);
+}
+
+.main-banner-letter{
+    color: var(--red);
+}
