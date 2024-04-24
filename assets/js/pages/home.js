@@ -2,4 +2,21 @@ import '../../styles/pages/home.css';
 
 document.addEventListener("DOMContentLoaded", (event) => {
     
+    if (typeof $.fn.magnificPopup === 'function') {
+        if ($('#subscribe-popup').length > 0) {
+
+            $(document).on('click', '.popup-modal-menu', function (e) {
+                e.preventDefault();
+                $.magnificPopup.open({
+                    showCloseBtn: false,
+                    items: {
+                        src: '#subscribe-popup'
+                    },
+                    type: 'inline',
+                    mainClass: 'my-mfp-zoom-in'
+                });
+            });
+        }
+    }
+
 });

@@ -28,15 +28,15 @@
 								<span class=" text-white ls-minus-2px ">Le p<span class="main-banner-letter">l</span>at<span class="main-banner-letter">e</span>au</span>
 								<span data-fancy-text='{ "effect": "rotate", "string": ["concerts", "restaurant", "banquets"] }' class="text-outline text-outline text-outline-width-2px sm-text-outline-width-1px text-outline-color-white text-outline-base-color-background"></span>
 							</div>
-							<a href="demo-restaurant-about.html" class="btn btn-extra-large btn-switch-text btn-black btn-round-edge btn-box-shadow mb-10px">
+							<a href="" class="btn btn-extra-large btn-switch-text btn-red btn-round-edge btn-box-shadow mb-10px popup-modal-menu">
 								<span>
-									<span class="btn-double-text" data-text="Nos spécialités">Nos spécialités</span>
+									<span class="btn-double-text" data-text="Menu du jour !">Menu du jour !</span>
 									<span>
 										<i class="feather icon-feather-arrow-right"></i>
 									</span>
 								</span>
 							</a>
-							<img src="{{ customAsset('app/demo-restaurant-home-01.png')}}" alt="" width="200" height="200" class="position-absolute right-minus-50px bottom-50px lg-bottom-10px lg-w-180px sm-w-150px animation-float d-none d-sm-inline-block border-radius-100">
+							<img src="{{ customAsset('app/header.jpg')}}" alt="" width="200" height="200" class="position-absolute right-minus-50px bottom-50px lg-bottom-10px lg-w-180px sm-w-150px animation-float d-none d-sm-inline-block border-radius-100">
 						</div>
 					</div>
 				</div>
@@ -57,7 +57,7 @@
 		<div class="container">
 			<div class="row align-items-center mb-4 lg-mb-6 lg-mt-5">
 				<div class="col-xl-7 col-lg-6 text-center position-relative md-mb-50px xs-mb-30px" data-anime='{ "rotateZ": [-15, 0], "opacity": [0,1], "duration": 1500, "delay": 300, "staggervalue": 150, "easing": "easeOutQuad" }'>
-					<img src="{{ customAsset('app/pages/home/demo-restaurant-home-04.webp')}}" alt="">
+					<img src="{{ customAsset('app/carbonade.jpeg')}}" alt="">
 				</div>
 				<div class="col-xl-5 col-lg-6" data-anime='{ "el": "childs", "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
 					<span class="fs-15 fw-600 text-red text-uppercase mb-25px d-block">
@@ -65,7 +65,7 @@
 					<h1 class="alt-font text-dark-gray mb-15px">Du fait maison & local.</h1>
 					<p class="w-90">Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
 					<div class="d-inline-block mt-10px xs-mt-0">
-						<a href="demo-restaurant-about.html" class="btn btn-dark-gray btn-large btn-switch-text btn-round-edge btn-box-shadow me-30px xs-me-15px xs-mb-10px">
+						<a onClick="window.location.href=window.location.href" href="." class="btn btn-dark-gray btn-large btn-switch-text btn-round-edge btn-box-shadow me-30px xs-me-15px xs-mb-10px">
 							<span>
 								<span class="btn-double-text" data-text="Lorem Ipsum">Lorem Ipsum</span>
 							</span>
@@ -123,9 +123,9 @@
 	</section>
 	<!-- end section -->
 	<!-- start section -->
-	{# <section class="cover-background" style="background-image: url('https://via.placeholder.com/1920x1151')"> #}
-		<section>
-			<div class="container"> <div class="row justify-content-center mb-1">
+	<section style="padding-bottom:160px!important;">
+		<div class="container">
+			<div class="row justify-content-center mb-1">
 				<div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
 					<span class="fs-15 fw-600 text-red text-uppercase mb-10px d-block">
 						<span class="w-5px h-2px bg-red d-inline-block align-middle me-5px"></span>Le goût avant tout<span class="w-5px h-2px bg-red d-inline-block align-middle ms-5px"></span>
@@ -575,287 +575,289 @@
 	<!-- end section -->
 	<!-- start section -->
 	{# <section class="overflow-hidden overlap-height position-relative">
-			<div class="container-fluid overlap-gap-section">
-				<div class="row justify-content-center mb-2">
-					<div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-						<span class="fs-15 fw-600 text-red text-uppercase mb-10px d-block">
-							<span class="w-5px h-2px bg-red d-inline-block align-middle me-5px"></span>Specials choice<span class="w-5px h-2px bg-red d-inline-block align-middle ms-5px"></span>
-						</span>
-						<h2 class="alt-font text-dark-gray">Popular dishes</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 position-relative feather-shadow sm-feather-shadow-none">
-						<div class="outside-box-right-15 outside-box-left-15 sm-outside-box-right-0 sm-outside-box-left-0" data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-							<div class="swiper swiper-dark-pagination swiper-line-pagination-style-01 magic-cursor" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "autoplay": { "delay": 2500, "disableOnInteraction": false },  "pagination": { "el": ".slider-four-slide-pagination-1", "clickable": true }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 5 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }'>
-								<div
-									class="swiper-wrapper">
-									<!-- start slider item -->
-									<div class="swiper-slide">
-										<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-											<div class="position-relative box-image border-radius-6px">
-												<img class="w-100 border-radius-6px" src="https://via.placeholder.com/800x605" alt="">
-												<div class="box-overlay bg-dark-gray"></div>
-												<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-											</div>
-											<div class="pt-30px bg-white text-center">
-												<span class="d-inline-block text-dark-gray fs-19 fw-600">Chicken breast burger</span>
-												<div class="w-100">
-													<span class="d-inline-block align-middle">Capsicum</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Parmesan</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Paneer</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- end slider item -->
-									<!-- start slider item -->
-									<div class="swiper-slide">
-										<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-											<div class="position-relative box-image border-radius-6px">
-												<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-												<div class="box-overlay bg-dark-gray"></div>
-												<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-											</div>
-											<div class="pt-30px bg-white text-center">
-												<span class="d-inline-block text-dark-gray fs-19 fw-600">Chicken breast burger</span>
-												<div class="w-100">
-													<span class="d-inline-block align-middle">Tomatoes</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Parmesan</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Basil</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- end slider item -->
-									<!-- start slider item -->
-									<div class="swiper-slide">
-										<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-											<div class="position-relative box-image border-radius-6px">
-												<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-												<div class="box-overlay bg-dark-gray"></div>
-												<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-											</div>
-											<div class="pt-30px bg-white text-center">
-												<span class="d-inline-block text-dark-gray fs-19 fw-600">Medium spicy chips</span>
-												<div class="w-100">
-													<span class="d-inline-block align-middle">Cheese</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Capsicum</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Basil</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- end slider item -->
-									<!-- start slider item -->
-									<div class="swiper-slide">
-										<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-											<div class="position-relative box-image border-radius-6px">
-												<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-												<div class="box-overlay bg-dark-gray"></div>
-												<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-											</div>
-											<div class="pt-30px bg-white text-center">
-												<span class="d-inline-block text-dark-gray fs-19 fw-600">Appeteaser blatter</span>
-												<div class="w-100">
-													<span class="d-inline-block align-middle">Cucumber</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Mushroom</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Basil</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- end slider item -->
-									<!-- start slider item -->
-									<div class="swiper-slide">
-										<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-											<div class="position-relative box-image border-radius-6px">
-												<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-												<div class="box-overlay bg-dark-gray"></div>
-												<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-											</div>
-											<div class="pt-30px bg-white text-center">
-												<span class="d-inline-block text-dark-gray fs-19 fw-600">Appeteaser blatter</span>
-												<div class="w-100">
-													<span class="d-inline-block align-middle">Mushroom</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Parmesan</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Paneer</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- end slider item -->
-									<!-- start slider item -->
-									<div class="swiper-slide">
-										<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-											<div class="position-relative box-image border-radius-6px">
-												<img class="w-100 border-radius-6px" src="https://via.placeholder.com/800x605" alt="">
-												<div class="box-overlay bg-dark-gray"></div>
-												<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-											</div>
-											<div class="pt-30px bg-white text-center">
-												<span class="d-inline-block text-dark-gray fs-19 fw-600">Chicken breast burger</span>
-												<div class="w-100">
-													<span class="d-inline-block align-middle">Capsicum</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Parmesan</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Paneer</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- end slider item -->
-									<!-- start slider item -->
-									<div class="swiper-slide">
-										<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-											<div class="position-relative box-image border-radius-6px">
-												<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-												<div class="box-overlay bg-dark-gray"></div>
-												<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-											</div>
-											<div class="pt-30px bg-white text-center">
-												<span class="d-inline-block text-dark-gray fs-19 fw-600">Chicken breast burger</span>
-												<div class="w-100">
-													<span class="d-inline-block align-middle">Tomatoes</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Parmesan</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Basil</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- end slider item -->
-									<!-- start slider item -->
-									<div class="swiper-slide">
-										<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-											<div class="position-relative box-image border-radius-6px">
-												<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-												<div class="box-overlay bg-dark-gray"></div>
-												<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-											</div>
-											<div class="pt-30px bg-white text-center">
-												<span class="d-inline-block text-dark-gray fs-19 fw-600">Medium spicy chips</span>
-												<div class="w-100">
-													<span class="d-inline-block align-middle">Cheese</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Capsicum</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Basil</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- end slider item -->
-									<!-- start slider item -->
-									<div class="swiper-slide">
-										<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-											<div class="position-relative box-image border-radius-6px">
-												<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-												<div class="box-overlay bg-dark-gray"></div>
-												<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-											</div>
-											<div class="pt-30px bg-white text-center">
-												<span class="d-inline-block text-dark-gray fs-19 fw-600">Appeteaser blatter</span>
-												<div class="w-100">
-													<span class="d-inline-block align-middle">Cucumber</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Mushroom</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Basil</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- end slider item -->
-									<!-- start slider item -->
-									<div class="swiper-slide">
-										<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-											<div class="position-relative box-image border-radius-6px">
-												<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-												<div class="box-overlay bg-dark-gray"></div>
-												<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-											</div>
-											<div class="pt-30px bg-white text-center">
-												<span class="d-inline-block text-dark-gray fs-19 fw-600">Appeteaser blatter</span>
-												<div class="w-100">
-													<span class="d-inline-block align-middle">Mushroom</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Parmesan</span>
-													<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-													<span class="d-inline-block align-middle">Paneer</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- end slider item -->
-								</div>
+					<div class="container-fluid overlap-gap-section">
+						<div class="row justify-content-center mb-2">
+							<div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+								<span class="fs-15 fw-600 text-red text-uppercase mb-10px d-block">
+									<span class="w-5px h-2px bg-red d-inline-block align-middle me-5px"></span>Specials choice<span class="w-5px h-2px bg-red d-inline-block align-middle ms-5px"></span>
+								</span>
+								<h2 class="alt-font text-dark-gray">Popular dishes</h2>
 							</div>
 						</div>
-						<!-- start slider pagination -->
-					<!--<div class="swiper-pagination slider-four-slide-pagination-1 swiper-pagination-style-2 swiper-pagination-clickable swiper-pagination-bullets"></div>-->
-						<!-- end slider pagination -->
+						<div class="row">
+							<div class="col-md-12 position-relative feather-shadow sm-feather-shadow-none">
+								<div class="outside-box-right-15 outside-box-left-15 sm-outside-box-right-0 sm-outside-box-left-0" data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+									<div class="swiper swiper-dark-pagination swiper-line-pagination-style-01 magic-cursor" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "autoplay": { "delay": 2500, "disableOnInteraction": false },  "pagination": { "el": ".slider-four-slide-pagination-1", "clickable": true }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 5 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }'>
+										<div
+											class="swiper-wrapper">
+											<!-- start slider item -->
+											<div class="swiper-slide">
+												<div class="services-box-style-01 hover-box last-paragraph-no-margin">
+													<div class="position-relative box-image border-radius-6px">
+														<img class="w-100 border-radius-6px" src="https://via.placeholder.com/800x605" alt="">
+														<div class="box-overlay bg-dark-gray"></div>
+														<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
+													</div>
+													<div class="pt-30px bg-white text-center">
+														<span class="d-inline-block text-dark-gray fs-19 fw-600">Chicken breast burger</span>
+														<div class="w-100">
+															<span class="d-inline-block align-middle">Capsicum</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Parmesan</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Paneer</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- end slider item -->
+											<!-- start slider item -->
+											<div class="swiper-slide">
+												<div class="services-box-style-01 hover-box last-paragraph-no-margin">
+													<div class="position-relative box-image border-radius-6px">
+														<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
+														<div class="box-overlay bg-dark-gray"></div>
+														<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
+													</div>
+													<div class="pt-30px bg-white text-center">
+														<span class="d-inline-block text-dark-gray fs-19 fw-600">Chicken breast burger</span>
+														<div class="w-100">
+															<span class="d-inline-block align-middle">Tomatoes</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Parmesan</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Basil</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- end slider item -->
+											<!-- start slider item -->
+											<div class="swiper-slide">
+												<div class="services-box-style-01 hover-box last-paragraph-no-margin">
+													<div class="position-relative box-image border-radius-6px">
+														<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
+														<div class="box-overlay bg-dark-gray"></div>
+														<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
+													</div>
+													<div class="pt-30px bg-white text-center">
+														<span class="d-inline-block text-dark-gray fs-19 fw-600">Medium spicy chips</span>
+														<div class="w-100">
+															<span class="d-inline-block align-middle">Cheese</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Capsicum</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Basil</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- end slider item -->
+											<!-- start slider item -->
+											<div class="swiper-slide">
+												<div class="services-box-style-01 hover-box last-paragraph-no-margin">
+													<div class="position-relative box-image border-radius-6px">
+														<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
+														<div class="box-overlay bg-dark-gray"></div>
+														<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
+													</div>
+													<div class="pt-30px bg-white text-center">
+														<span class="d-inline-block text-dark-gray fs-19 fw-600">Appeteaser blatter</span>
+														<div class="w-100">
+															<span class="d-inline-block align-middle">Cucumber</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Mushroom</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Basil</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- end slider item -->
+											<!-- start slider item -->
+											<div class="swiper-slide">
+												<div class="services-box-style-01 hover-box last-paragraph-no-margin">
+													<div class="position-relative box-image border-radius-6px">
+														<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
+														<div class="box-overlay bg-dark-gray"></div>
+														<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
+													</div>
+													<div class="pt-30px bg-white text-center">
+														<span class="d-inline-block text-dark-gray fs-19 fw-600">Appeteaser blatter</span>
+														<div class="w-100">
+															<span class="d-inline-block align-middle">Mushroom</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Parmesan</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Paneer</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- end slider item -->
+											<!-- start slider item -->
+											<div class="swiper-slide">
+												<div class="services-box-style-01 hover-box last-paragraph-no-margin">
+													<div class="position-relative box-image border-radius-6px">
+														<img class="w-100 border-radius-6px" src="https://via.placeholder.com/800x605" alt="">
+														<div class="box-overlay bg-dark-gray"></div>
+														<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
+													</div>
+													<div class="pt-30px bg-white text-center">
+														<span class="d-inline-block text-dark-gray fs-19 fw-600">Chicken breast burger</span>
+														<div class="w-100">
+															<span class="d-inline-block align-middle">Capsicum</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Parmesan</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Paneer</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- end slider item -->
+											<!-- start slider item -->
+											<div class="swiper-slide">
+												<div class="services-box-style-01 hover-box last-paragraph-no-margin">
+													<div class="position-relative box-image border-radius-6px">
+														<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
+														<div class="box-overlay bg-dark-gray"></div>
+														<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
+													</div>
+													<div class="pt-30px bg-white text-center">
+														<span class="d-inline-block text-dark-gray fs-19 fw-600">Chicken breast burger</span>
+														<div class="w-100">
+															<span class="d-inline-block align-middle">Tomatoes</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Parmesan</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Basil</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- end slider item -->
+											<!-- start slider item -->
+											<div class="swiper-slide">
+												<div class="services-box-style-01 hover-box last-paragraph-no-margin">
+													<div class="position-relative box-image border-radius-6px">
+														<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
+														<div class="box-overlay bg-dark-gray"></div>
+														<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
+													</div>
+													<div class="pt-30px bg-white text-center">
+														<span class="d-inline-block text-dark-gray fs-19 fw-600">Medium spicy chips</span>
+														<div class="w-100">
+															<span class="d-inline-block align-middle">Cheese</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Capsicum</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Basil</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- end slider item -->
+											<!-- start slider item -->
+											<div class="swiper-slide">
+												<div class="services-box-style-01 hover-box last-paragraph-no-margin">
+													<div class="position-relative box-image border-radius-6px">
+														<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
+														<div class="box-overlay bg-dark-gray"></div>
+														<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
+													</div>
+													<div class="pt-30px bg-white text-center">
+														<span class="d-inline-block text-dark-gray fs-19 fw-600">Appeteaser blatter</span>
+														<div class="w-100">
+															<span class="d-inline-block align-middle">Cucumber</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Mushroom</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Basil</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- end slider item -->
+											<!-- start slider item -->
+											<div class="swiper-slide">
+												<div class="services-box-style-01 hover-box last-paragraph-no-margin">
+													<div class="position-relative box-image border-radius-6px">
+														<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
+														<div class="box-overlay bg-dark-gray"></div>
+														<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
+													</div>
+													<div class="pt-30px bg-white text-center">
+														<span class="d-inline-block text-dark-gray fs-19 fw-600">Appeteaser blatter</span>
+														<div class="w-100">
+															<span class="d-inline-block align-middle">Mushroom</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Parmesan</span>
+															<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
+															<span class="d-inline-block align-middle">Paneer</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- end slider item -->
+										</div>
+									</div>
+								</div>
+								<!-- start slider pagination -->
+							<!--<div class="swiper-pagination slider-four-slide-pagination-1 swiper-pagination-style-2 swiper-pagination-clickable swiper-pagination-bullets"></div>-->
+								<!-- end slider pagination -->
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-		</section> #}
+				</section> #}
 	<!-- end section -->
 	<!-- start section -->
-		<section class="bg-very-light-gray position-relative big-section"> <div class="container-fluid overlap-section">
+	<section class="bg-very-light-gray position-relative big-section"> <div class="container-fluid overlap-section">
 			<div class="row position-relative mb-4" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
 				<div class="col swiper swiper-width-auto text-center" data-slider-options='{ "slidesPerView": "auto", "spaceBetween":50, "speed": 10000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
-					<div class="swiper-wrapper marquee-slide">
+					<div
+						class="swiper-wrapper marquee-slide">
 						<!-- start slider item -->
 						<div class="swiper-slide">
-							<div class="fs-80 ls-minus-2px alt-font text-outline text-outline-color-base-color">Restaurant</div>
+							<div class="fs-60 ls-minus-2px alt-font text-outline text-outline-color-base-color">Restaurant</div>
 						</div>
 						<!-- end slider item -->
 						<!-- start slider item -->
 						<div class="swiper-slide">
-							<div class="fs-80 ls-minus-2px alt-font text-dark-gray">Bar</div>
+							<div class="fs-60 ls-minus-2px alt-font text-dark-gray">Bar</div>
 						</div>
 						<!-- end slider item -->
 						<!-- start slider item -->
 						<div class="swiper-slide">
-							<div class="fs-80 ls-minus-2px alt-font text-outline text-outline-color-base-color">Banquets</div>
+							<div class="fs-60 ls-minus-2px alt-font text-outline text-outline-color-base-color">Banquets</div>
 						</div>
 						<!-- end slider item -->
-						<!-- start slider item -->
-						<div class="swiper-slide">
-							<div class="fs-80 ls-minus-2px alt-font text-dark-gray">Concerts</div>
-						</div>
-						<!-- end slider item -->
-						<!-- start slider item -->
-						<div class="swiper-slide">
-							<div class="fs-80 ls-minus-2px alt-font text-outline text-outline-color-base-color">Restaurant</div>
-						</div>
-						<!-- end slider item -->
-						<!-- start slider item -->
-						<div class="swiper-slide">
-							<div class="fs-80 ls-minus-2px alt-font text-dark-gray">Bar</div>
-						</div>
-						<!-- end slider item -->
-						<!-- start slider item -->
-						<div class="swiper-slide">
-							<div class="fs-80 ls-minus-2px alt-font text-outline text-outline-color-base-color">Banquets</div>
-						</div>
-						<!-- end slider item -->
-						<!-- start slider item -->
-						<div class="swiper-slide">
-							<div class="fs-80 ls-minus-2px alt-font text-dark-gray">Concerts</div>
-						</div>
-						<!-- end slider item -->
+
+						{% for i in 0..10 %}
+
+							<!-- start slider item -->
+							<div class="swiper-slide">
+								<div class="fs-60 ls-minus-2px alt-font text-dark-gray">Concerts</div>
+							</div>
+							<!-- end slider item -->
+							<!-- start slider item -->
+							<div class="swiper-slide">
+								<div class="fs-60 ls-minus-2px alt-font text-outline text-outline-color-base-color">Restaurant</div>
+							</div>
+							<!-- end slider item -->
+							<!-- start slider item -->
+							<div class="swiper-slide">
+								<div class="fs-60 ls-minus-2px alt-font text-dark-gray">Bar</div>
+							</div>
+							<!-- end slider item -->
+							<!-- start slider item -->
+							<div class="swiper-slide">
+								<div class="fs-60 ls-minus-2px alt-font text-outline text-outline-color-base-color">Banquets</div>
+							</div>
+							<!-- end slider item -->
+
+						{% endfor %}
+
 					</div>
 				</div>
 			</div>
@@ -869,23 +871,21 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-6 col-lg-8 col-md-10" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-					<div class="swiper slider-custom-image swiper-pagination-bottom magic-cursor testimonials-style-03" data-slider-options='{ "loop": true, "pagination": { "el": ".slider-custom-image-pagination", "type": "bullets", "clickable": true }, "keyboard": { "enabled": true, "onlyInViewport": true }, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav", "effect": "fade" } }' data-thumbs='["https://via.placeholder.com/148x148","https://via.placeholder.com/148x148","https://via.placeholder.com/148x148"]'>
-						<div
-							class="swiper-wrapper">
+					<div class="swiper slider-custom-image swiper-pagination-bottom testimonials-style-03" data-slider-options='{ "loop": true, "pagination": { "el": ".slider-custom-image-pagination", "type": "bullets", "clickable": true }, "keyboard": { "enabled": true, "onlyInViewport": true }, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav", "effect": "fade" } }' data-thumbs='["https://craftohtml.themezaa.com/images/avtar-34.jpg","https://craftohtml.themezaa.com/images/avtar-33.jpg"]'>
+						<div class="swiper-wrapper">
 							<!-- start testimonial item -->
 							{# <div class="swiper-slide" data-bullet-thumb="background-image: url(https://via.placeholder.com/210x210)">
-								<div class="d-flex flex-column">
-									<div class="mb-28 align-self-center text-center w-100">
-										<img src="images/demo-restaurant-home-quotes-icon.jpg" class="mb-30px rounded-circle" alt="">
-										<h4 class="alt-font lh-42 text-dark-gray mb-10px">Food for us comes from our relatives whether they have wings or fins or roots that is how we consider food has a culture It has history it has a story it has relationships.</h4>
-										<span class="fs-20 fw-500 text-base-color d-block">Herman miller</span>
-									</div>
-								</div>
-							</div> #}
+																						<div class="d-flex flex-column">
+																							<div class="mb-28 align-self-center text-center w-100">
+																								<img src="images/demo-restaurant-home-quotes-icon.jpg" class="mb-30px rounded-circle" alt="">
+																								<h4 class="alt-font lh-42 text-dark-gray mb-10px">Food for us comes from our relatives whether they have wings or fins or roots that is how we consider food has a culture It has history it has a story it has relationships.</h4>
+																								<span class="fs-20 fw-500 text-base-color d-block">Herman miller</span>
+																							</div>
+																						</div>
+																					</div> #}
 							<!-- end testimonial item -->
 							<!-- start testimonial item -->
-							<div class="swiper-slide" data-bullet-thumb="background-image: url(https://via.placeholder.com/148x148)">
-								<div class="d-flex flex-column">
+								<div class="swiper-slide" data-bullet-thumb="background-image: url(https://craftohtml.themezaa.com/images/avtar-34.jpg)"> <div class="d-flex flex-column">
 									<div class="mb-28 align-self-center text-center w-100">
 										<img src="images/demo-restaurant-home-quotes-icon.jpg" class="mb-30px rounded-circle" alt="">
 										<h4 class="alt-font lh-42 text-dark-gray mb-10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, rerum saepe itaque neque distinctio</h4>
@@ -895,7 +895,7 @@
 							</div>
 							<!-- end testimonial item -->
 							<!-- start testimonial item -->
-							<div class="swiper-slide" data-bullet-thumb="background-image: url(https://via.placeholder.com/200x200)">
+							<div class="swiper-slide" data-bullet-thumb="background-image: url(https://craftohtml.themezaa.com/images/avtar-33.jpg)">
 								<div class="d-flex flex-column">
 									<div class="mb-28 align-self-center text-center w-100">
 										<img src="images/demo-restaurant-home-quotes-icon.jpg" class="mb-30px rounded-circle" alt="">
@@ -912,7 +912,7 @@
 
 					<!-- start slider navigation -->
 						{# <div class="swiper-button-next-nav swiper-button-next mb-5px"><i class="line-icon-Arrow-OutRight icon-large text-light-gray"></i></div>
-						<div class="swiper-button-previous-nav swiper-button-prev mb-5px"><i class="line-icon-Arrow-OutLeft icon-large text-light-gray"></i></div> #}
+																		<div class="swiper-button-previous-nav swiper-button-prev mb-5px"><i class="line-icon-Arrow-OutLeft icon-large text-light-gray"></i></div> #}
 						<!-- end slider pagination -->
 					</div>
 				</div>
@@ -925,24 +925,25 @@
 		<div class="container">
 			<div class="row justify-content-center overlap-section mb-6 g-0">
 				<div class="col-auto text-center last-paragraph-no-margin bg-white pt-20px pb-20px ps-6 pe-6 border-radius-100px" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-					<div class="text-center bg-golden-yellow text-white fs-16 lh-36 border-radius-30px d-inline-block ps-20px pe-20px align-middle me-10px">
-						<i class="bi bi-star-fill"></i>
-						<i class="bi bi-star-fill"></i>
-						<i class="bi bi-star-fill"></i>
-						<i class="bi bi-star-fill"></i>
-						<i class="bi bi-star-fill"></i>
+
+					<div class="text-center text-white fs-16 lh-36 border-radius-30px d-inline-block ps-20px pe-20px align-middle me-10px" style="background-color:#3B5998;">
+						<a class="facebook" href="https://www.facebook.com/restaurantleplateau/">
+							<i class="fa-brands fa-facebook-f" style="color:white!important;"></i>
+						</a>
 					</div>
-					<div class="d-inline-block fs-18 text-dark-gray align-middle fw-500">
-						<span class="text-decoration-line-bottom-medium fw-600">25,000+ happy food lovers</span>
-						visited our authentic restaurant.</div>
+
+					<a href="https://www.facebook.com/restaurantleplateau/" class="d-inline-block fs-18 text-dark-gray align-middle fw-500">
+						<span class="text-decoration-line-bottom-medium fw-600">Suivez-nous sur notre Facebook</span>
+						Lorem Ipsum actua est.
+					</a>
 				</div>
 			</div>
 			<div class="row justify-content-center mb-4">
 				<div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
 					<span class="fs-15 fw-600 text-red text-uppercase mb-10px d-block">
-						<span class="w-5px h-2px bg-red d-inline-block align-middle me-5px"></span>From our blog<span class="w-5px h-2px bg-red d-inline-block align-middle ms-5px"></span>
+						<span class="w-5px h-2px bg-red d-inline-block align-middle me-5px"></span>Suivez-nous<span class="w-5px h-2px bg-red d-inline-block align-middle ms-5px"></span>
 					</span>
-					<h2 class="alt-font text-dark-gray mb-0">Recent articles</h2>
+					<h2 class="alt-font text-dark-gray mb-0">Notre actualité</h2>
 				</div>
 			</div>
 			<div class="row blog-metro">
@@ -953,14 +954,14 @@
 						<li class="grid-item">
 							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
 								<div class="blog-image bg-dark-slate-blue">
-									<a href="demo-restaurant-blog-single-creative.html"><img src="https://via.placeholder.com/700x700" alt=""/></a>
+									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/actu-1.jpg')}}" alt=""/></a>
 									<div class="blog-overlay"></div>
 								</div>
 								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
 									<div class="blog-categories mb-auto">
-										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Restaurant</a>
+										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Concert</a>
 									</div>
-									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Never eat more than you can life.</a>
+									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Level, Jullian Angel et théatre d'impro en Avril !</a>
 								</figcaption>
 							</figure>
 						</li>
@@ -969,14 +970,14 @@
 						<li class="grid-item">
 							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
 								<div class="blog-image bg-dark-slate-blue">
-									<a href="demo-restaurant-blog-single-creative.html"><img src="https://via.placeholder.com/700x700" alt=""/></a>
+									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/actu-2.png')}}" alt=""/></a>
 									<div class="blog-overlay"></div>
 								</div>
 								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
 									<div class="blog-categories mb-auto">
-										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Restaurant</a>
+										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Atelier</a>
 									</div>
-									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Life is uncertain Eat dessert first.</a>
+									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Attelier dessert avec la chef Lili en Mai !</a>
 								</figcaption>
 							</figure>
 						</li>
@@ -985,14 +986,69 @@
 						<li class="grid-item">
 							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
 								<div class="blog-image bg-dark-slate-blue">
-									<a href="demo-restaurant-blog-single-creative.html"><img src="https://via.placeholder.com/700x700" alt=""/></a>
+									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/actu-3.jpg')}}" alt=""/></a>
 									<div class="blog-overlay"></div>
 								</div>
 								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
 									<div class="blog-categories mb-auto">
-										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Restaurant</a>
+										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Bar</a>
 									</div>
-									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Food simply isn't important to me.</a>
+									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Tous les jeudi en Mai !</a>
+								</figcaption>
+							</figure>
+						</li>
+						<!-- end blog item -->
+					</ul>
+				</div>
+			</div>
+			<div class="row blog-metro">
+				<div class="col-12">
+					<ul class="blog-metro blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-large" data-anime='{ "el": "childs", "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.05, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+						<li class="grid-sizer"></li>
+						<!-- start blog item -->
+						<li class="grid-item">
+							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
+								<div class="blog-image bg-dark-slate-blue">
+									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/actu-3.jpg')}}" alt=""/></a>
+									<div class="blog-overlay"></div>
+								</div>
+								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
+									<div class="blog-categories mb-auto">
+										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Bar</a>
+									</div>
+									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Tous les jeudi en Mai !</a>
+								</figcaption>
+							</figure>
+						</li>
+						<!-- end blog item -->
+						<!-- start blog item -->
+						<li class="grid-item">
+							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
+								<div class="blog-image bg-dark-slate-blue">
+									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/actu-1.jpg')}}" alt=""/></a>
+									<div class="blog-overlay"></div>
+								</div>
+								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
+									<div class="blog-categories mb-auto">
+										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Concert</a>
+									</div>
+									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Level, Jullian Angel et théatre d'impro en Avril !</a>
+								</figcaption>
+							</figure>
+						</li>
+						<!-- end blog item -->
+						<!-- start blog item -->
+						<li class="grid-item">
+							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
+								<div class="blog-image bg-dark-slate-blue">
+									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/actu-2.png')}}" alt=""/></a>
+									<div class="blog-overlay"></div>
+								</div>
+								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
+									<div class="blog-categories mb-auto">
+										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Atelier</a>
+									</div>
+									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Attelier dessert avec la chef Lili en Mai !</a>
 								</figcaption>
 							</figure>
 						</li>
@@ -1007,35 +1063,46 @@
 	{% include 'partials/_footer.html.twig' %}
 	<!-- end footer -->
 	<!-- start subscription popup -->
-		<div id="subscribe-popup" class="mfp-hide subscribe-popup"> <div class="container">
-			<div class="row justify-content-center">
-				<div class="col-xl-9 col-md-10 bg-white">
-					<div class="row position-relative box-shadow-quadruple-large">
-						<div class="col-lg-6 cover-background md-h-400px xs-h-300px" style="background-image:url('https://via.placeholder.com/800x780');"></div>
-						<div class="col-lg-6 newsletter-popup p-8 pt-10 pb-10 lg-p-5 md-p-6 xs-p-8 position-relative">
-							<span class="fs-15 fw-600 text-red text-uppercase mb-10px d-block" style="">Get 10% off your first meal!</span>
-							<h2 class="d-inline-block alt-font text-dark-gray mb-20px">Savor the finest flavors in town!</h2>
-							<div class="d-inline-block w-100 newsletter-style-05 position-relative mb-20px">
-								<form action="email-templates/subscribe-newsletter.php" method="post">
-									<input class="input-medium w-100 border-radius-4px form-control required mb-15px" type="email" name="email" placeholder="Enter your email address"/>
-									<input type="hidden" name="redirect" value="">
-									<button type="submit" aria-label="submit" class="btn btn-medium btn-round-edge btn-dark-gray btn-box-shadow w-100 submit">Subscribe now!</button>
-									<div class="form-results border-radius-4px mt-10px lh-normal pt-10px pb-10px ps-15px pe-15px fs-16 w-100 text-center position-absolute z-index-1 d-none"></div>
-								</form>
-							</div>
-							<label for="newsletter-off" class="fs-15"><input class="w-auto me-10px position-relative top-1px p-0" type="checkbox" id="newsletter-off" name="newsletter-off">Don't show this popup again</label>
+	<div id="subscribe-popup" class="mfp-hide subscribe-popup"> <div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xl-9 col-md-10 bg-white">
+				<div class="row position-relative box-shadow-quadruple-large">
+					<div class="col-lg-6 cover-background md-h-400px xs-h-300px" style="background-image:url('{{ customAsset('app/menu-jour.jpg')}}');"></div>
+					
+					<div class="col-lg-6 newsletter-popup p-8 pt-10 pb-10 lg-p-5 md-p-6 xs-p-8 position-relative">
+						{# <span class="fs-15 fw-600 text-red text-uppercase mb-10px d-block" style=""></span></br> #}
+						<span class="fs-15 fw-600 text-red text-uppercase mb-10px d-block" style="">Aujourd'hui</br> Ouvert de 11h à 15h et de 18h à 23h</span>
+						<h2 class="d-inline-block alt-font text-dark-gray mb-20px">La chef propose</h2>
+						<div class="d-inline-block w-100 newsletter-style-05 position-relative mb-20px">
+							<form action="email-templates/subscribe-newsletter.php" method="post">
+								{# <input class="input-medium w-100 border-radius-4px form-control required mb-15px" type="email" name="email" placeholder="Recevez notre news letter"/> #}
+								<input type="hidden" name="redirect" value="">
+								<button type="submit" aria-label="submit" class="btn btn-medium btn-round-edge btn-dark-gray btn-box-shadow w-100 submit">
+									<span>
+										<span>
+											<i class="feather icon-feather-calendar"></i>
+										</span>
+										<span class="btn-double-text" data-text="Réserver une table">Réserver une table</span>
+									</span>	
+								</button>
+								<div class="form-results border-radius-4px mt-10px lh-normal pt-10px pb-10px ps-15px pe-15px fs-16 w-100 text-center position-absolute z-index-1 d-none"></div>
+							</form>
 						</div>
-						<button title="Close (Esc)" type="button" class="mfp-close text-dark-gray"></button>
+						{# <label for="newsletter-off" class="fs-15"><input class="w-auto me-10px position-relative top-1px p-0" type="checkbox" id="newsletter-off" name="newsletter-off">Don't show this popup again</label> #}
 					</div>
+					<button title="Close (Esc)" type="button" class="mfp-close text-dark-gray"></button>
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 	<!-- end subscription popup -->
 	<!-- start scroll progress -->
 	<div class="scroll-progress d-none d-xxl-block">
 		<a href="#" class="scroll-top" aria-label="scroll">
-			<span class="scroll-text">Scroll</span>
+			<span class="scroll-text">
+				<i class="fa-solid fa-arrow-down-long align-middle icon-large text-base-color"></i>
+			</span>
 			<span class="scroll-line">
 				<span class="scroll-point"></span>
 			</span>

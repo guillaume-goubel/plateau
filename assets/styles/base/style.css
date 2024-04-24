@@ -10327,6 +10327,10 @@ blockquote footer {
   background-color: var(--black);
   color: var(--white);
 }
+.btn.btn-red {
+  background-color: var(--red);
+  color: var(--white);
+}
 .btn.btn-black:hover, .btn.btn-black:active {
   background-color: transparent;
   border-color: var(--black);
