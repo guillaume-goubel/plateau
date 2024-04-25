@@ -74,7 +74,7 @@ Table of contents
   --selago:#eaedff;
   --white-ice:#d8f5ef;
   --cornflower-blue:#445fed;
-  --jade:#00AF6B;
+  --jade:#DAF3E4;
   --orange: #ef991f;
   --majorelle-blue: #724ade;
   --light-majorelle-blue: #f2edfe;
@@ -166,6 +166,9 @@ video {
 }
 .g-recaptcha.is-invalid iframe {
   border: 1px solid #dc3545 !important;
+}
+.border-simple-white {
+  border: 1px solid white !important;
 }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   padding-right: 15px;

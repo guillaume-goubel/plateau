@@ -1,15 +1,28 @@
 #main-banner-section{
     background: url(https://craftohtml.themezaa.com/images/demo-restaurant-home-banner-bg.jpg);
 }
+#main-banner-circle{
+    background-color: #ACB4A8;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #main-banner-time-infos{
+        margin: auto;
+        position: absolute;
+        left: 0;
+        bottom: -85px;
+        right: 0;
+    }
+
+}
 
 .main-banner-letter{
     color: var(--red);
 }
-
 .img-actu-slider{
     height: 376px;
 }
-
 .blog-categories{
     display: flex;
     justify-content: end;
