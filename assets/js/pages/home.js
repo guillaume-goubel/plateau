@@ -1,7 +1,9 @@
 import '../../styles/pages/home.css';
 
+
 document.addEventListener("DOMContentLoaded", (event) => {
     
+    // MENU POPUP
     if (typeof $.fn.magnificPopup === 'function') {
         if ($('#subscribe-popup').length > 0) {
 
@@ -18,5 +20,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
             });
         }
     }
+
+    // HEADER LINKS
+    $(document).on('click', '.header-link', function (e) {
+        e.preventDefault();
+        let data = $(this).data('anchor');
+
+        if (data) {
+            let sectionCible = document.getElementById(data);
+            console.log(sectionCible);
+            sectionCible.scrollIntoView({ behavior: 'smooth' });
+        }
+
+    });
 
 });

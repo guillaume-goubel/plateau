@@ -13,9 +13,11 @@
 		<div class="circle-cursor circle-cursor-outer"></div>
 	</div>
 	<!-- end cursor -->
+
 	<!-- start header -->
 	{% include 'partials/_header.html.twig' %}
 	<!-- end header -->
+
 	<!-- start banner -->
 		<section id="main-banner-section" class="p-0 full-screen md-h-700px bg-dark-gray sm-h-600px ipad-top-space-margin cover-background position-relative" data-parallax-background-ratio="0.8"> <div class="opacity-light bg-dark-gray"></div>
 		<div class="container h-100">
@@ -27,7 +29,7 @@
 
 							<div class="alt-font fs-110 lh-100 xs-fs-80 xs-lh-70 mb-30px xs-mb-15px fancy-text-style-4">
 								<span class=" text-white ls-minus-2px ">Le p<span class="main-banner-letter">l</span>at<span class="main-banner-letter">e</span>au</span>
-								<span data-fancy-text='{ "effect": "rotate", "string": ["concerts", "restaurant", "banquets"] }' class="text-outline text-outline text-outline-width-2px sm-text-outline-width-1px text-outline-color-white text-outline-base-color-background"></span>
+								<span data-fancy-text='{ "effect": "rotate", "string": ["concerts", "restaurant", "privatisation"] }' class="text-outline text-outline text-outline-width-2px sm-text-outline-width-1px text-outline-color-white text-outline-base-color-background"></span>
 							</div>
 							<a href="" class="btn btn-extra-large btn-switch-text btn-red btn-round-edge btn-box-shadow mb-10px popup-modal-menu">
 								<span>
@@ -47,7 +49,7 @@
 									</div>
 									<div class="feature-box-content">
 										<span class="text-white">12h-14h</span>
-										<span class="text-white">18h-14h</span>
+										<span class="text-white">18h-22h</span>
 									</div>
 								</div>
 							</div>
@@ -59,9 +61,10 @@
 		</div>
 	</section>
 	<!-- end banner -->
+
 	<!-- start section -->
 	<section
-		class="position-relative overflow-hidden z-index-0">
+		id="about-section" class="position-relative overflow-hidden z-index-0" style="padding-top:160px!important;">
 		{# <div class="position-absolute left-0px w-100 text-center top-minus-90px lg-top-minus-60px xs-top-minus-20px opacity-2 ls-minus-10px lg-ls-minus-1px fs-350 lg-fs-250 xs-fs-200 text-nowrap alt-font text-uppercase">experience</div> #}
 		<div class="position-absolute left-minus-50px mt-15 d-none d-xl-inline-block" data-parallax-liquid="true" data-parallax-transition="2" data-parallax-position="top">
 			<img src="{{ customAsset('app/pages/home/demo-restaurant-home-02.jpg')}}" alt="" data-bottom-top="transform: rotate(-30deg)" data-top-bottom="transform:rotate(10deg)">
@@ -137,8 +140,9 @@
 		</div>
 	</section>
 	<!-- end section -->
+
 	<!-- start section -->
-	<section style="padding-bottom:160px!important;">
+	<section id="speciality-section" style="padding-bottom:190px!important;">
 		<div class="container">
 			<div class="row justify-content-center mb-1">
 				<div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -588,246 +592,10 @@
 		</div>
 	</section>
 	<!-- end section -->
+
 	<!-- start section -->
-	{# <section class="overflow-hidden overlap-height position-relative">
-							<div class="container-fluid overlap-gap-section">
-								<div class="row justify-content-center mb-2">
-									<div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-										<span class="fs-15 fw-600 text-red text-uppercase mb-10px d-block">
-											<span class="w-5px h-2px bg-red d-inline-block align-middle me-5px"></span>Specials choice<span class="w-5px h-2px bg-red d-inline-block align-middle ms-5px"></span>
-										</span>
-										<h2 class="alt-font text-dark-gray">Popular dishes</h2>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12 position-relative feather-shadow sm-feather-shadow-none">
-										<div class="outside-box-right-15 outside-box-left-15 sm-outside-box-right-0 sm-outside-box-left-0" data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-											<div class="swiper swiper-dark-pagination swiper-line-pagination-style-01 magic-cursor" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "autoplay": { "delay": 2500, "disableOnInteraction": false },  "pagination": { "el": ".slider-four-slide-pagination-1", "clickable": true }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 5 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }'>
-												<div
-													class="swiper-wrapper">
-													<!-- start slider item -->
-													<div class="swiper-slide">
-														<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-															<div class="position-relative box-image border-radius-6px">
-																<img class="w-100 border-radius-6px" src="https://via.placeholder.com/800x605" alt="">
-																<div class="box-overlay bg-dark-gray"></div>
-																<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-															</div>
-															<div class="pt-30px bg-white text-center">
-																<span class="d-inline-block text-dark-gray fs-19 fw-600">Chicken breast burger</span>
-																<div class="w-100">
-																	<span class="d-inline-block align-middle">Capsicum</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Parmesan</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Paneer</span>
-																</div>
-															</div>
-														</div>
-													</div>
-													<!-- end slider item -->
-													<!-- start slider item -->
-													<div class="swiper-slide">
-														<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-															<div class="position-relative box-image border-radius-6px">
-																<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-																<div class="box-overlay bg-dark-gray"></div>
-																<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-															</div>
-															<div class="pt-30px bg-white text-center">
-																<span class="d-inline-block text-dark-gray fs-19 fw-600">Chicken breast burger</span>
-																<div class="w-100">
-																	<span class="d-inline-block align-middle">Tomatoes</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Parmesan</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Basil</span>
-																</div>
-															</div>
-														</div>
-													</div>
-													<!-- end slider item -->
-													<!-- start slider item -->
-													<div class="swiper-slide">
-														<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-															<div class="position-relative box-image border-radius-6px">
-																<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-																<div class="box-overlay bg-dark-gray"></div>
-																<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-															</div>
-															<div class="pt-30px bg-white text-center">
-																<span class="d-inline-block text-dark-gray fs-19 fw-600">Medium spicy chips</span>
-																<div class="w-100">
-																	<span class="d-inline-block align-middle">Cheese</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Capsicum</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Basil</span>
-																</div>
-															</div>
-														</div>
-													</div>
-													<!-- end slider item -->
-													<!-- start slider item -->
-													<div class="swiper-slide">
-														<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-															<div class="position-relative box-image border-radius-6px">
-																<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-																<div class="box-overlay bg-dark-gray"></div>
-																<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-															</div>
-															<div class="pt-30px bg-white text-center">
-																<span class="d-inline-block text-dark-gray fs-19 fw-600">Appeteaser blatter</span>
-																<div class="w-100">
-																	<span class="d-inline-block align-middle">Cucumber</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Mushroom</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Basil</span>
-																</div>
-															</div>
-														</div>
-													</div>
-													<!-- end slider item -->
-													<!-- start slider item -->
-													<div class="swiper-slide">
-														<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-															<div class="position-relative box-image border-radius-6px">
-																<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-																<div class="box-overlay bg-dark-gray"></div>
-																<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-															</div>
-															<div class="pt-30px bg-white text-center">
-																<span class="d-inline-block text-dark-gray fs-19 fw-600">Appeteaser blatter</span>
-																<div class="w-100">
-																	<span class="d-inline-block align-middle">Mushroom</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Parmesan</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Paneer</span>
-																</div>
-															</div>
-														</div>
-													</div>
-													<!-- end slider item -->
-													<!-- start slider item -->
-													<div class="swiper-slide">
-														<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-															<div class="position-relative box-image border-radius-6px">
-																<img class="w-100 border-radius-6px" src="https://via.placeholder.com/800x605" alt="">
-																<div class="box-overlay bg-dark-gray"></div>
-																<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-															</div>
-															<div class="pt-30px bg-white text-center">
-																<span class="d-inline-block text-dark-gray fs-19 fw-600">Chicken breast burger</span>
-																<div class="w-100">
-																	<span class="d-inline-block align-middle">Capsicum</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Parmesan</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Paneer</span>
-																</div>
-															</div>
-														</div>
-													</div>
-													<!-- end slider item -->
-													<!-- start slider item -->
-													<div class="swiper-slide">
-														<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-															<div class="position-relative box-image border-radius-6px">
-																<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-																<div class="box-overlay bg-dark-gray"></div>
-																<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-															</div>
-															<div class="pt-30px bg-white text-center">
-																<span class="d-inline-block text-dark-gray fs-19 fw-600">Chicken breast burger</span>
-																<div class="w-100">
-																	<span class="d-inline-block align-middle">Tomatoes</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Parmesan</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Basil</span>
-																</div>
-															</div>
-														</div>
-													</div>
-													<!-- end slider item -->
-													<!-- start slider item -->
-													<div class="swiper-slide">
-														<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-															<div class="position-relative box-image border-radius-6px">
-																<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-																<div class="box-overlay bg-dark-gray"></div>
-																<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-															</div>
-															<div class="pt-30px bg-white text-center">
-																<span class="d-inline-block text-dark-gray fs-19 fw-600">Medium spicy chips</span>
-																<div class="w-100">
-																	<span class="d-inline-block align-middle">Cheese</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Capsicum</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Basil</span>
-																</div>
-															</div>
-														</div>
-													</div>
-													<!-- end slider item -->
-													<!-- start slider item -->
-													<div class="swiper-slide">
-														<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-															<div class="position-relative box-image border-radius-6px">
-																<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-																<div class="box-overlay bg-dark-gray"></div>
-																<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-															</div>
-															<div class="pt-30px bg-white text-center">
-																<span class="d-inline-block text-dark-gray fs-19 fw-600">Appeteaser blatter</span>
-																<div class="w-100">
-																	<span class="d-inline-block align-middle">Cucumber</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Mushroom</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Basil</span>
-																</div>
-															</div>
-														</div>
-													</div>
-													<!-- end slider item -->
-													<!-- start slider item -->
-													<div class="swiper-slide">
-														<div class="services-box-style-01 hover-box last-paragraph-no-margin">
-															<div class="position-relative box-image border-radius-6px">
-																<img class="w-100" src="https://via.placeholder.com/800x605" alt="">
-																<div class="box-overlay bg-dark-gray"></div>
-																<span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-130px h-130px rounded-circle bg-white box-shadow-extra-large text-uppercase alt-font fs-30 lh-28 text-red ps-15px pe-15px text-center">Just $35.00</span>
-															</div>
-															<div class="pt-30px bg-white text-center">
-																<span class="d-inline-block text-dark-gray fs-19 fw-600">Appeteaser blatter</span>
-																<div class="w-100">
-																	<span class="d-inline-block align-middle">Mushroom</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Parmesan</span>
-																	<span class="d-inline-block align-middle ms-10px me-10px fs-12 opacity-5">&#9677;</span>
-																	<span class="d-inline-block align-middle">Paneer</span>
-																</div>
-															</div>
-														</div>
-													</div>
-													<!-- end slider item -->
-												</div>
-											</div>
-										</div>
-										<!-- start slider pagination -->
-									<!--<div class="swiper-pagination slider-four-slide-pagination-1 swiper-pagination-style-2 swiper-pagination-clickable swiper-pagination-bullets"></div>-->
-										<!-- end slider pagination -->
-									</div>
-								</div>
-							</div>
-						</section> #}
-	<!-- end section -->
-	<!-- start section -->
-		<section class="bg-very-light-gray position-relative big-section"> <div class="container-fluid overlap-section">
+	<section id="team-section" class="bg-very-light-gray position-relative extra-big-section" style="padding-bottom:270px;">
+		<div class="container-fluid overlap-section">
 			<div class="row position-relative mb-4" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
 				<div class="col swiper swiper-width-auto text-center" data-slider-options='{ "slidesPerView": "auto", "spaceBetween":50, "speed": 10000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
 					<div
@@ -844,7 +612,7 @@
 						<!-- end slider item -->
 						<!-- start slider item -->
 						<div class="swiper-slide">
-							<div class="fs-60 ls-minus-2px alt-font text-outline text-outline-color-base-color">Banquets</div>
+							<div class="fs-60 ls-minus-2px alt-font text-outline text-outline-color-base-color">Privatisation</div>
 						</div>
 						<!-- end slider item -->
 
@@ -867,7 +635,7 @@
 							<!-- end slider item -->
 							<!-- start slider item -->
 							<div class="swiper-slide">
-								<div class="fs-60 ls-minus-2px alt-font text-outline text-outline-color-base-color">Banquets</div>
+								<div class="fs-60 ls-minus-2px alt-font text-outline text-outline-color-base-color">Privatisation</div>
 							</div>
 							<!-- end slider item -->
 
@@ -887,20 +655,11 @@
 			<div class="row justify-content-center">
 				<div class="col-xl-6 col-lg-8 col-md-10" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
 					<div class="swiper slider-custom-image swiper-pagination-bottom testimonials-style-03" data-slider-options='{ "loop": true, "pagination": { "el": ".slider-custom-image-pagination", "type": "bullets", "clickable": true }, "keyboard": { "enabled": true, "onlyInViewport": true }, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav", "effect": "fade" } }' data-thumbs='["https://craftohtml.themezaa.com/images/avtar-34.jpg","https://craftohtml.themezaa.com/images/avtar-33.jpg"]'>
-						<div class="swiper-wrapper">
+						<div
+							class="swiper-wrapper">
 							<!-- start testimonial item -->
-							{# <div class="swiper-slide" data-bullet-thumb="background-image: url(https://via.placeholder.com/210x210)">
-																																				<div class="d-flex flex-column">
-																																					<div class="mb-28 align-self-center text-center w-100">
-																																						<img src="images/demo-restaurant-home-quotes-icon.jpg" class="mb-30px rounded-circle" alt="">
-																																						<h4 class="alt-font lh-42 text-dark-gray mb-10px">Food for us comes from our relatives whether they have wings or fins or roots that is how we consider food has a culture It has history it has a story it has relationships.</h4>
-																																						<span class="fs-20 fw-500 text-base-color d-block">Herman miller</span>
-																																					</div>
-																																				</div>
-																																			</div> #}
-							<!-- end testimonial item -->
-							<!-- start testimonial item -->
-								<div class="swiper-slide" data-bullet-thumb="background-image: url(https://craftohtml.themezaa.com/images/avtar-34.jpg)"> <div class="d-flex flex-column">
+							<div class="swiper-slide" data-bullet-thumb="background-image: url(https://craftohtml.themezaa.com/images/avtar-34.jpg)">
+								<div class="d-flex flex-column">
 									<div class="mb-28 align-self-center text-center w-100">
 										<img src="images/demo-restaurant-home-quotes-icon.jpg" class="mb-30px rounded-circle" alt="">
 										<h4 class="alt-font lh-42 text-dark-gray mb-10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, rerum saepe itaque neque distinctio</h4>
@@ -927,7 +686,7 @@
 
 					<!-- start slider navigation -->
 						{# <div class="swiper-button-next-nav swiper-button-next mb-5px"><i class="line-icon-Arrow-OutRight icon-large text-light-gray"></i></div>
-																														<div class="swiper-button-previous-nav swiper-button-prev mb-5px"><i class="line-icon-Arrow-OutLeft icon-large text-light-gray"></i></div> #}
+																																																												<div class="swiper-button-previous-nav swiper-button-prev mb-5px"><i class="line-icon-Arrow-OutLeft icon-large text-light-gray"></i></div> #}
 						<!-- end slider pagination -->
 					</div>
 				</div>
@@ -935,10 +694,20 @@
 		</div>
 	</section>
 	<!-- end section -->
+
 	<!-- start section -->
-	<section>
+	<section id="actu-section">
 		<div class="container">
-			<div class="row justify-content-center overlap-section mb-6 g-0">
+
+			<div class="row justify-content-center mb-4">
+
+				<div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+					<span class="fs-15 fw-600 text-red text-uppercase mb-10px d-block">
+						<span class="w-5px h-2px bg-red d-inline-block align-middle me-5px"></span>Suivez-nous<span class="w-5px h-2px bg-red d-inline-block align-middle ms-5px"></span>
+					</span>
+					<h2 class="alt-font text-dark-gray mb-0">Notre actualité</h2>
+				</div>
+
 				<div class="col-auto text-center last-paragraph-no-margin bg-white pt-20px pb-20px ps-6 pe-6 border-radius-100px" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
 
 					<div class="text-center text-white fs-16 lh-36 border-radius-30px d-inline-block ps-20px pe-20px align-middle me-10px" style="background-color:#3B5998;">
@@ -951,138 +720,317 @@
 						<span class="text-decoration-line-bottom-medium fw-600">Suivez-nous sur notre Facebook</span>
 						Lorem Ipsum actua est.
 					</a>
+
+				</div>
+
+			</div>
+
+			<div class="row blog-metro">
+				<div class="col-12">
+					<ul class="blog-metro blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-large" data-anime='{ "el": "childs", "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.05, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+						<li class="grid-sizer"></li>
+						<!-- start blog item -->
+						<li class="grid-item">
+							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
+								<div class="blog-image bg-dark-slate-blue">
+									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/pages/home/actu-1.jpg')}}" alt=""/></a>
+									<div class="blog-overlay"></div>
+								</div>
+								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
+									<div class="blog-categories mb-auto">
+										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Concert</a>
+									</div>
+									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Level,
+																													Jullian Angel et théatre d'impro en Avril !</a>
+								</figcaption>
+							</figure>
+						</li>
+						<!-- end blog item -->
+						<!-- start blog item -->
+						<li class="grid-item">
+							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
+								<div class="blog-image bg-dark-slate-blue">
+									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/pages/home/actu-2.png')}}" alt=""/></a>
+									<div class="blog-overlay"></div>
+								</div>
+								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
+									<div class="blog-categories mb-auto">
+										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Atelier</a>
+									</div>
+									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Atelier
+																													dessert avec la chef Lili en Mai !</a>
+								</figcaption>
+							</figure>
+						</li>
+						<!-- end blog item -->
+						<!-- start blog item -->
+						<li class="grid-item">
+							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
+								<div class="blog-image bg-dark-slate-blue">
+									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/pages/home/actu-3.jpg')}}" alt=""/></a>
+									<div class="blog-overlay"></div>
+								</div>
+								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
+									<div class="blog-categories mb-auto">
+										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Bar</a>
+									</div>
+									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Tous
+																													les jeudi en Mai !</a>
+								</figcaption>
+							</figure>
+						</li>
+						<!-- end blog item -->
+					</ul>
 				</div>
 			</div>
-			<div class="row justify-content-center mb-4">
+
+			<div class="row blog-metro">
+				<div class="col-12">
+					<ul class="blog-metro blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-large" data-anime='{ "el": "childs", "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.05, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+						<li class="grid-sizer"></li>
+						<!-- start blog item -->
+						<li class="grid-item">
+							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
+								<div class="blog-image bg-dark-slate-blue">
+									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/pages/home/actu-3.jpg')}}" alt=""/></a>
+									<div class="blog-overlay"></div>
+								</div>
+								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
+									<div class="blog-categories mb-auto">
+										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Bar</a>
+									</div>
+									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Tous
+																													les jeudi en Mai !</a>
+								</figcaption>
+							</figure>
+						</li>
+						<!-- end blog item -->
+						<!-- start blog item -->
+						<li class="grid-item">
+							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
+								<div class="blog-image bg-dark-slate-blue">
+									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/pages/home/actu-1.jpg')}}" alt=""/></a>
+									<div class="blog-overlay"></div>
+								</div>
+								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
+									<div class="blog-categories mb-auto">
+										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Concert</a>
+									</div>
+									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Level,
+																													Jullian Angel et théatre d'impro en Avril !</a>
+								</figcaption>
+							</figure>
+						</li>
+						<!-- end blog item -->
+						<!-- start blog item -->
+						<li class="grid-item">
+							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
+								<div class="blog-image bg-dark-slate-blue">
+									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/pages/home/actu-2.png')}}" alt=""/></a>
+									<div class="blog-overlay"></div>
+								</div>
+								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
+									<div class="blog-categories mb-auto">
+										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Atelier</a>
+									</div>
+									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Atelier
+																													dessert avec la chef Lili en Mai !</a>
+								</figcaption>
+							</figure>
+						</li>
+						<!-- end blog item -->
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- end section -->
+
+	<!-- start section -->
+	<section id="event-section" class="overflow-hidden contain-background background-position-center-top" style="background-size:contain!important;background-image: url('https://craftohtml.themezaa.com/images/demo-restaurant-about-title-bg.jpg')">
+
+		<div class="container">
+
+			<div class="row justify-content-center mb-2">
 				<div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
 					<span class="fs-15 fw-600 text-red text-uppercase mb-10px d-block">
-						<span class="w-5px h-2px bg-red d-inline-block align-middle me-5px"></span>Suivez-nous<span class="w-5px h-2px bg-red d-inline-block align-middle ms-5px"></span>
+						<span class="w-5px h-2px bg-red d-inline-block align-middle me-5px"></span>Prochainement<span class="w-5px h-2px bg-red d-inline-block align-middle ms-5px"></span>
 					</span>
-					<h2 class="alt-font text-dark-gray mb-0">Notre actualité</h2>
+					<h2 class="alt-font fw-400 text-dark-gray">Concerts / Spectacles</h2>
+					<a href="#" class="btn btn-large btn-rounded with-rounded btn-dark-gray d-table d-lg-inline-block lg-mb-15px md-mx-auto">Venir se représenter au Plateau<span class="bg-base-color text-white">
+							<i class="fa-solid fa-arrow-right"></i>
+						</span>
+					</a>
 				</div>
 			</div>
-			<div class="row blog-metro">
-				<div class="col-12">
-					<ul class="blog-metro blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-large" data-anime='{ "el": "childs", "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.05, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-						<li class="grid-sizer"></li>
-						<!-- start blog item -->
-						<li class="grid-item">
-							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
-								<div class="blog-image bg-dark-slate-blue">
-									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/actu-1.jpg')}}" alt=""/></a>
-									<div class="blog-overlay"></div>
-								</div>
-								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
-									<div class="blog-categories mb-auto">
-										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Concert</a>
-									</div>
-									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Level, Jullian Angel et théatre d'impro en Avril !</a>
-								</figcaption>
-							</figure>
-						</li>
-						<!-- end blog item -->
-						<!-- start blog item -->
-						<li class="grid-item">
-							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
-								<div class="blog-image bg-dark-slate-blue">
-									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/actu-2.png')}}" alt=""/></a>
-									<div class="blog-overlay"></div>
-								</div>
-								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
-									<div class="blog-categories mb-auto">
-										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Atelier</a>
-									</div>
-									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Atelier dessert avec la chef Lili en Mai !</a>
-								</figcaption>
-							</figure>
-						</li>
-						<!-- end blog item -->
-						<!-- start blog item -->
-						<li class="grid-item">
-							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
-								<div class="blog-image bg-dark-slate-blue">
-									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/actu-3.jpg')}}" alt=""/></a>
-									<div class="blog-overlay"></div>
-								</div>
-								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
-									<div class="blog-categories mb-auto">
-										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Bar</a>
-									</div>
-									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Tous les jeudi en Mai !</a>
-								</figcaption>
-							</figure>
-						</li>
-						<!-- end blog item -->
-					</ul>
+
+			<div class="row justify-content-center m-0 p-2" data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+
+				<!-- start features box item -->
+				{# <div class="col-xl-3 p-0">
+																<div class="ps-10 pe-10 pt-15 pb-15 xxl-ps-15 xxl-pe-15 lg-p-7 sm-p-40px overflow-hidden h-100 text-center text-xl-start border-top border-end border-color-transparent-white-light">
+																	<h2 class="alt-font fw-500 text-white ls-minus-2px">
+																		<span class="w-20px h-4px d-inline-block bg-base-color me-10px"></span>Event schedule</h2>
+																	<p class="mb-35px lg-w-50 md-w-70 sm-w-100 mx-auto mx-xl-auto">Lorem ipsum dolor consectetur eiusmod tempor incididunt labore exercitation tempor.</p>
+																	<a href="demo-conference-schedule.html" class="btn btn-large btn-dark-gray btn-hover-animation btn-round-edge btn-box-shadow align-self-center">
+																		<span>
+																			<span class="btn-text">Download schedule</span>
+																			<span class="btn-icon">
+																				<i class="fa-solid fa-arrow-right"></i>
+																			</span>
+																		</span>
+																	</a>
+																</div>
+															</div> #}
+				<!-- end features box item -->
+
+				<!-- start features box item -->
+					<div class="col-xl-3 col-md-4 bg-medium-slate-blue event-style-01 p-0 m-1"> <div class="bg-midnight-blue hover-box will-change-inherit dark-hover d-flex justify-content-start feature-box ps-10 pe-10 pt-8 pb-8 md-p-8 md-pb-25 sm-pb-50px overflow-hidden h-100 text-center text-md-start border-top border-end border-color-transparent-white-light">
+						<div class="feature-box-content w-100 lg-mb-5 last-paragraph-no-margin">
+							<div class="text-white fs-26 alt-font fw-500 mb-20px">25 Mai 2024</div>
+							<p class="text-white fs-20 alt-font">Concert - Metallica<br>21h / 22h
+							</p>
+							<div class="divider-style-03 mb-20px divider-style-03-01 border-color-transparent-white-light"></div>
+							<p class="text-light-opacity">En exclusivité au Plateau !! Pensez à venir dès 20h pour avoir une place !!</p>
+							<div class="divider-style-03 mb-20px divider-style-03-01 border-color-transparent-white-light"></div>
+						</div>
+						<div class="feature-box-overlay bg-base-color"></div>
+					</div>
+				</div>
+				<!-- end features box item -->
+
+				<!-- start features box item -->
+				<div class="col-xl-3 col-md-4 bg-medium-slate-blue event-style-01 p-0 m-1">
+					<div class="bg-midnight-blue hover-box will-change-inherit dark-hover d-flex justify-content-start feature-box ps-10 pe-10 pt-8 pb-8 md-p-8 md-pb-25 sm-pb-50px overflow-hidden h-100 text-center text-md-start border-top border-end border-color-transparent-white-light">
+						<div class="feature-box-content w-100 lg-mb-5 last-paragraph-no-margin">
+							<div class="text-white fs-28 alt-font fw-500 mb-20px">03 Juin 2024</div>
+
+							<p class="text-white fs-20 alt-font">Concert - Level<br>21h / 22h</p>
+							<div class="divider-style-03 mb-20px divider-style-03-01 border-color-transparent-white-light"></div>
+
+							<p class="text-white fs-20 alt-font">Concert - Julien Angel<br>22h / 23h</p>
+							<div class="divider-style-03 mb-20px divider-style-03-01 border-color-transparent-white-light"></div>
+
+							<p class="text-white fs-20 alt-font">Théatre - Troupe de Toto<br>23h / 24h</p>
+							<div class="divider-style-03 mb-20px divider-style-03-01 border-color-transparent-white-light"></div>
+
+							<p class="text-light-opacity">En exclusivité au Plateau !! Pensez à venir dès 20h pour avoir une place !!</p>
+							<div class="divider-style-03 mb-20px divider-style-03-01 border-color-transparent-white-light"></div>
+
+						</div>
+						<div class="feature-box-overlay bg-base-color"></div>
+					</div>
+				</div>
+				<!-- end features box item -->
+
+				<!-- start features box item -->
+				<div class="col-xl-3 col-md-4 bg-medium-slate-blue event-style-01 p-0 m-1">
+					<div class="bg-midnight-blue hover-box will-change-inherit dark-hover d-flex justify-content-start feature-box ps-10 pe-10 pt-8 pb-8 md-p-8 md-pb-25 sm-pb-50px overflow-hidden h-100 text-center text-md-start border-top border-end border-color-transparent-white-light">
+						<div class="feature-box-content w-100 lg-mb-5 last-paragraph-no-margin">
+							<div class="text-white fs-26 alt-font fw-500 mb-20px">25 Mai 2024</div>
+							<p class="text-white fs-20 alt-font">Concert - Metallica<br>21h / 22h
+							</p>
+							<div class="divider-style-03 mb-20px divider-style-03-01 border-color-transparent-white-light"></div>
+							<p class="text-light-opacity">En exclusivité au Plateau !! Pensez à venir dès 20h pour avoir une place !!</p>
+							<div class="divider-style-03 mb-20px divider-style-03-01 border-color-transparent-white-light"></div>
+						</div>
+						<div class="feature-box-overlay bg-base-color"></div>
+					</div>
+				</div>
+				<!-- end features box item -->
+
+
+			</div>
+		</div>
+
+	</section>
+	<!-- end section -->
+
+	<!-- start section -->
+	<section id="partenary-section" class="overflow-hidden">
+		<div class="container">
+			<div class="row justify-content-center mb-2">
+				<div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+					<span class="fs-15 fw-600 text-red text-uppercase mb-10px d-block">
+						<span class="w-5px h-2px bg-red d-inline-block align-middle me-5px"></span>Merci à eux<span class="w-5px h-2px bg-red d-inline-block align-middle ms-5px"></span>
+					</span>
+					<h2 class="alt-font fw-400 text-dark-gray">Nos partenaires</h2>
 				</div>
 			</div>
-			<div class="row blog-metro">
-				<div class="col-12">
-					<ul class="blog-metro blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-large" data-anime='{ "el": "childs", "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.05, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-						<li class="grid-sizer"></li>
-						<!-- start blog item -->
-						<li class="grid-item">
-							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
-								<div class="blog-image bg-dark-slate-blue">
-									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/actu-3.jpg')}}" alt=""/></a>
-									<div class="blog-overlay"></div>
-								</div>
-								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
-									<div class="blog-categories mb-auto">
-										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Bar</a>
-									</div>
-									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Tous les jeudi en Mai !</a>
-								</figcaption>
-							</figure>
-						</li>
-						<!-- end blog item -->
-						<!-- start blog item -->
-						<li class="grid-item">
-							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
-								<div class="blog-image bg-dark-slate-blue">
-									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/actu-1.jpg')}}" alt=""/></a>
-									<div class="blog-overlay"></div>
-								</div>
-								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
-									<div class="blog-categories mb-auto">
-										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Concert</a>
-									</div>
-									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Level, Jullian Angel et théatre d'impro en Avril !</a>
-								</figcaption>
-							</figure>
-						</li>
-						<!-- end blog item -->
-						<!-- start blog item -->
-						<li class="grid-item">
-							<figure class="position-relative mb-0 overflow-hidden border-radius-6px">
-								<div class="blog-image bg-dark-slate-blue">
-									<a href="demo-restaurant-blog-single-creative.html"><img class="img-actu-slider" src="{{ customAsset('app/actu-2.png')}}" alt=""/></a>
-									<div class="blog-overlay"></div>
-								</div>
-								<figcaption class="d-flex flex-column justify-content-end h-100 p-50px lg-p-35px">
-									<div class="blog-categories mb-auto">
-										<a href="#" class="categories-btn bg-white text-dark-gray text-uppercase fw-600 ms-0 mb-auto align-self-start">Atelier</a>
-									</div>
-									<a href="demo-restaurant-blog-single-creative.html" class="text-white card-title fs-28 lh-32 alt-font w-60 xl-w-70 lg-w-80 md-w-70">Atelier dessert avec la chef Lili en Mai !</a>
-								</figcaption>
-							</figure>
-						</li>
-						<!-- end blog item -->
-					</ul>
+			<div
+				class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center text-center icon-with-style-2 g-0 border-top border-start border-color-transparent-dark-very-light" data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>
+				<!-- start features box item -->
+				<div class="col icon-with-text-style-04 transition-inner-all">
+					<div class="feature-box box-shadow-triple-large-hover h-100 border-bottom border-end border-color-transparent-dark-very-light sm-border-bottom p-15 lg-ps-10 lg-pe-10">
+						<div class="feature-box-icon mb-20px">
+							<img src="https://craftohtml.themezaa.com/images/demo-restaurant-about-award-01.jpg" alt="">
+						</div>
+						<div class="feature-box-content">
+							<span class="d-block text-dark-gray lh-24 w-80 mx-auto">Lorem ipsum molestias -
+								<span class="fw-600">2017</span>
+							</span>
+						</div>
+					</div>
 				</div>
+				<!-- end features box item -->
+				<!-- start features box item -->
+				<div class="col icon-with-text-style-04 transition-inner-all">
+					<div class="feature-box box-shadow-triple-large-hover h-100 border-bottom border-end border-color-transparent-dark-very-light sm-border-bottom p-15 lg-ps-10 lg-pe-10">
+						<div class="feature-box-icon mb-20px">
+							<img src="https://craftohtml.themezaa.com/images/demo-restaurant-about-award-02.jpg" alt="">
+						</div>
+						<div class="feature-box-content">
+							<span class="d-block text-dark-gray lh-24 w-80 mx-auto">Nemo tempore Molestias -
+								<span class="fw-600">2019</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- end features box item -->
+				<!-- start features box item -->
+				<div class="col icon-with-text-style-04 transition-inner-all">
+					<div class="feature-box box-shadow-triple-large-hover h-100 border-bottom border-end border-color-transparent-dark-very-light sm-border-bottom p-15 lg-ps-10 lg-pe-10">
+						<div class="feature-box-icon mb-20px">
+							<img src="https://craftohtml.themezaa.com/images/demo-restaurant-about-award-03.jpg" alt="">
+						</div>
+						<div class="feature-box-content">
+							<span class="d-block text-dark-gray lh-24 w-80 mx-auto">Aliquid nostrum cum -
+								<span class="fw-600">2020</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- end features box item -->
+				<!-- start features box item -->
+				<div class="col icon-with-text-style-04 transition-inner-all">
+					<div class="feature-box box-shadow-triple-large-hover h-100 border-bottom border-end border-color-transparent-dark-very-light sm-border-bottom p-15 lg-ps-10 lg-pe-10">
+						<div class="feature-box-icon mb-20px">
+							<img src="https://craftohtml.themezaa.com/images/demo-restaurant-about-award-04.jpg" alt="">
+						</div>
+						<div class="feature-box-content">
+							<span class="d-block text-dark-gray lh-24 w-80 mx-auto">Tenetur commodi. -
+								<span class="fw-600">2021</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- end features box item -->
 			</div>
 		</div>
 	</section>
 	<!-- end section -->
+
 	<!-- start footer -->
 	{% include 'partials/_footer.html.twig' %}
 	<!-- end footer -->
+
 	<!-- start subscription popup -->
 		<div id="subscribe-popup" class="mfp-hide subscribe-popup"> <div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-9 col-md-10 bg-white">
 					<div class="row position-relative box-shadow-quadruple-large">
-						<div class="col-lg-6 cover-background md-h-400px xs-h-300px" style="background-image:url('{{ customAsset('app/menu-jour.jpg')}}');"></div>
+						<div class="col-lg-6 background contain-background background-no-repeat background-position-left md-h-600px xs-h-400px" style="background-image:url('{{ customAsset('app/menu-jour.jpg')}}');"></div>
 
 						<div
 							class="col-lg-6 newsletter-popup p-8 pt-10 pb-10 lg-p-5 md-p-6 xs-p-8 position-relative">
@@ -1100,7 +1048,8 @@
 										<span>
 											<i class="feather icon-feather-calendar"></i>
 										</span>
-										<span class="btn-double-text" data-text="Réserver une table">Réserver une table</span>
+										<span class="btn-double-text" data-text="Réserver une table">Réserver une
+																																	table</span>
 									</span>
 								</button>
 								<div class="form-results border-radius-4px mt-10px lh-normal pt-10px pb-10px ps-15px pe-15px fs-16 w-100 text-center position-absolute z-index-1 d-none"></div>
@@ -1115,6 +1064,7 @@
 	</div>
 </div>
 <!-- end subscription popup -->
+
 <!-- start scroll progress -->
 <div class="scroll-progress d-none d-xxl-block">
 	<a href="#" class="scroll-top" aria-label="scroll">
@@ -1125,7 +1075,8 @@
 			<span class="scroll-point"></span>
 		</span>
 	</a>
-</div>{% endblock %}{% block baseJavascripts %}
+</div>
+<!-- end scroll progress -->{% endblock %}{% block baseJavascripts %}
 {% block importmap %}
 	{{ importmap(['app', 'home']) }}
 {% endblock %}{% endblock %}
