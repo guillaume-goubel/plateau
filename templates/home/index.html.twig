@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!
+{% block title %}Accueil
 {% endblock %}
 
 {% block stylesheets %}{% endblock %}
@@ -19,7 +19,7 @@
 	<!-- end header -->
 
 	<!-- start banner -->
-		<section id="main-banner-section" class="p-0 full-screen md-h-700px bg-dark-gray sm-h-600px ipad-top-space-margin cover-background position-relative" data-parallax-background-ratio="0.8"> <div class="opacity-light bg-dark-gray"></div>
+	<section id="main-banner-section" class="p-0 full-screen md-h-700px bg-dark-gray sm-h-600px ipad-top-space-margin cover-background position-relative" data-parallax-background-ratio="0.8"> <div class="opacity-light bg-dark-gray"></div>
 		<div class="container h-100">
 			<div class="row align-items-center h-100 justify-content-center">
 				<div class="col-12 position-relative text-center">
@@ -1076,7 +1076,9 @@
 		</span>
 	</a>
 </div>
-<!-- end scroll progress -->{% endblock %}{% block baseJavascripts %}
+
+{% endblock %}{% block baseJavascripts %}
+
 {% block importmap %}
 	{{ importmap(['app', 'home']) }}
 {% endblock %}{% endblock %}
