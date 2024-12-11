@@ -1,0 +1,80 @@
+<div style="margin-top:50px;margin-bottom:50px;">
+    <div style="gap:4%;" class="row justify-content-center counter-style-07 ps-3 pe-3 mt-3" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+
+        <div class="p-0 gallery-container kpi-card p-4">
+            <div class="d-flex">
+                <a href="{{ path('admin_menu_edit', { 'id' : 1 }) }}" class="col-8">
+                    <div class="fs-14">Menu du jour :  </div>
+                    <div class="fw-600 fs-18 text-dark-gray">{{menu.menuForAt|format_date('full',  locale= 'fr')}}</div>
+                    <div class="col-12 mt-2">
+                        <div><i class="fa-solid fa-circle-plus align-middle icon-large text-base-color"></i></div>
+                    </div>
+                </a>
+
+                <div class="col-4">
+                    <ul class="image-gallery-style-01 gallery-wrapper grid grid-1 gutter-small">
+                        <li class="grid-sizer"></li> 
+                        
+                        {% if menu.mainPicture != null %}
+                            <li class="grid-item transition-inner-all">
+                                <div class="gallery-box">
+                                    <a href="{{ customAsset('data/uploads/menu/photos/' ~ menu.mainPicture ) }}" data-group="lightbox-gallery" title="">
+                                        <div class="position-relative gallery-image bg-white overflow-hidden">
+                                            <img class="event-photos"  src="{{ customAsset('data/uploads/menu/photos/' ~ menu.mainPicture ) }}" alt="" />
+                                            <div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
+                                                <div class="d-flex align-items-center justify-content-center w-50px h-50px rounded-circle bg-dark-gray">
+                                                    <i class="feather icon-feather-search text-white icon-small"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        {% endif %}
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div style="gap:4%;" class="row justify-content-center counter-style-07 ps-3 pe-3 mt-3" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+
+        {# EVENTS #}
+        <a href="" class="col text-center kpi-card">
+            <div class="d-flex justify-content-around">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="kpi-icon-container" style="background-color:#00b4d8">
+                        <i class="fa-solid fa-calendar icon-medium"></i>
+                    </div>
+                </div>
+                <div class="kpi-result-container">
+                    <div class="vertical-counter d-inline-flex text-dark-gray fw-800 mb-0 position-relative z-index-0" data-to="2">
+                        <span class="text-highlight position-absolute bottom-9px w-100"><span class="bg-gradient-flamingo-amethyst-green h-10px opacity-2"></span></span>
+                    </div>
+                    <span class="d-block fs-14 fw-700 text-uppercase text-dark-gray">Evénements</span>
+                </div>
+            </div>
+        </a>
+
+        {# ACTIVITIES #}
+        <a href="" class="col text-center kpi-card">
+            <div class="d-flex justify-content-around">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="kpi-icon-container" style="background-color:#90e0ef">
+                        <i class="fa-solid fa-grip icon-medium"></i>
+                    </div>
+                </div>
+                <div class="kpi-result-container">
+                    <div class="vertical-counter d-inline-flex text-dark-gray fw-800 mb-0 position-relative z-index-0" data-to="5">
+                        <span class="text-highlight position-absolute bottom-9px w-100"><span class="bg-gradient-flamingo-amethyst-green h-10px opacity-2"></span></span>
+                    </div>
+                    <span class="d-block fs-14 fw-700 text-uppercase text-dark-gray">Activités</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</div>

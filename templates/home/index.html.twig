@@ -7,12 +7,9 @@
 
 {% block body %}
 
-	<!-- start cursor -->
-	<div class="cursor-page-inner">
-		<div class="circle-cursor circle-cursor-inner"></div>
-		<div class="circle-cursor circle-cursor-outer"></div>
-	</div>
-	<!-- end cursor -->
+<body data-mobile-nav-trigger-alignment="right" data-mobile-nav-style="classic" data-mobile-nav-bg-color="#383632"> 
+	
+	{{ parent() }}
 
 	<!-- start header -->
 	{% include 'partials/_header.html.twig' %}
@@ -31,7 +28,7 @@
 								<span class=" text-white ls-minus-2px ">Le p<span class="main-banner-letter">l</span>at<span class="main-banner-letter">e</span>au</span>
 								<span data-fancy-text='{ "effect": "rotate", "string": ["restaurant", "bar", "concerts", "privatisation"] }' class="text-outline text-outline text-outline-width-2px sm-text-outline-width-1px text-outline-color-white text-outline-base-color-background"></span>
 							</div>
-							<a href="" class="btn btn-extra-large btn-switch-text btn-red btn-round-edge btn-box-shadow mb-10px popup-modal-menu">
+							<a class="btn btn-extra-large btn-switch-text btn-red btn-round-edge btn-box-shadow mb-10px" data-bs-toggle="modal" data-bs-target="#menuModal">
 								<span>
 									<span class="btn-double-text" data-text="Menu du jour !">Menu du jour !</span>
 									<span>
@@ -63,8 +60,7 @@
 	<!-- end banner -->
 
 	<!-- start section -->
-	<section
-		id="about-section" class="position-relative overflow-hidden z-index-0" style="padding-top:160px!important;">
+	<section id="about-section" class="position-relative overflow-hidden z-index-0">
 		{# <div class="position-absolute left-0px w-100 text-center top-minus-90px lg-top-minus-60px xs-top-minus-20px opacity-2 ls-minus-10px lg-ls-minus-1px fs-350 lg-fs-250 xs-fs-200 text-nowrap alt-font text-uppercase">experience</div> #}
 		<div class="position-absolute left-minus-50px mt-15 d-none d-xl-inline-block" data-parallax-liquid="true" data-parallax-transition="2" data-parallax-position="top">
 			<img src="{{ customAsset('app/pages/home/demo-restaurant-home-02.jpg')}}" alt="" data-bottom-top="transform: rotate(-30deg)" data-top-bottom="transform:rotate(10deg)">
@@ -142,7 +138,7 @@
 	<!-- end section -->
 
 	<!-- start section -->
-	<section id="speciality-section" style="padding-bottom:190px!important;">
+	<section id="speciality-section">
 		<div class="container">
 			<div class="row justify-content-center mb-1">
 				<div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -594,7 +590,7 @@
 	<!-- end section -->
 
 	<!-- start section -->
-	<section id="team-section" class="bg-very-light-gray position-relative extra-big-section" style="padding-bottom:270px;">
+	<section id="team-section" class="bg-very-light-gray position-relative extra-big-section">
 		<div class="container-fluid overlap-section">
 			<div class="row position-relative mb-4" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
 				<div class="col swiper swiper-width-auto text-center" data-slider-options='{ "slidesPerView": "auto", "spaceBetween":50, "speed": 10000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
@@ -1026,7 +1022,7 @@
 	<!-- end footer -->
 
 	<!-- start subscription popup -->
-		<div id="subscribe-popup" class="mfp-hide subscribe-popup"> <div class="container">
+	<div id="subscribe-popup" class="mfp-hide subscribe-popup"> <div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-9 col-md-10 bg-white">
 					<div class="row position-relative box-shadow-quadruple-large">
@@ -1062,8 +1058,54 @@
 			</div>
 		</div>
 	</div>
+
 </div>
 <!-- end subscription popup -->
+
+<!-- Menu Modal -->
+<div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ 	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content" style="height:80vh;overflow:hidden;">
+			{# <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+			</div> #}
+			<div class="modal-body">
+				<div>
+					
+					<div class="d-flex align-items-center justify-content-between mb-8">
+						<h4 class="d-inline-block alt-font text-dark-gray mb-0">Le Plateau propose</h4>
+						<button type="button" class="btn btn-transparent-dark-gray btn-small btn-round-edge btn-box-shadow" data-bs-dismiss="modal">Fermer</button>
+					</div>
+
+					<ul class="image-gallery-style-05 gallery-wrapper grid grid-1 gutter-small">
+						<li class="grid-sizer"></li> 
+						{% if menu.mainPicture != null %}
+							<li class="grid-item transition-inner-all">
+								<div class="gallery-box">
+									<a href="{{ customAsset('data/uploads/menu/photos/' ~ menu.mainPicture ) }}" data-group="lightbox-gallery" title="">
+										<div class="position-relative gallery-image bg-gray overflow-hidden">
+											<img class="event-photos"  src="{{ customAsset('data/uploads/menu/photos/' ~ menu.mainPicture ) }}" alt="" />
+											<div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
+												<div class="d-flex align-items-center justify-content-center w-50px h-50px rounded-circle bg-dark-gray">
+													<i class="feather icon-feather-search text-white icon-small"></i>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</li>
+						{% endif %}
+					</ul>
+				</div>
+			</div>
+			{# <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div> #}
+		</div>
+	</div>
+</div>
 
 <!-- start scroll progress -->
 <div class="scroll-progress d-none d-xxl-block">
@@ -1077,8 +1119,10 @@
 	</a>
 </div>
 
-{% endblock %}{% block baseJavascripts %}
+{% endblock %}
 
-{% block importmap %}
-	{{ importmap(['app', 'home']) }}
-{% endblock %}{% endblock %}
+{% block baseJavascripts %}
+	{% block importmap %}
+		{{ importmap(['app', 'base', 'home']) }}
+	{% endblock %}
+{% endblock %}

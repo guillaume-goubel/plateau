@@ -29,9 +29,9 @@
 
 	</head>
 
-    <body data-mobile-nav-style="classic"> 
-        {% block body %}{% endblock %}
-    </body>
+	{% block body %}
+		{% include 'partials/notifications/_notyFlashMessage.html.twig' %}
+	{% endblock %}
 
     <script type="text/javascript" src="{{ asset('js/jquery.js') }} "></script>
     <script type="text/javascript" src="{{ asset('js/vendors.min.js') }} "></script>

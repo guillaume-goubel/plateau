@@ -1,0 +1,72 @@
+{{ form_start(form)}}
+
+    <div class="row d-flex ">
+        <div class="col-12 col-md-6 mt-1">
+            {{ form_row(form.name) }}
+        </div>
+        <div class="col-12 col-md-6 mt-1">
+            {{ form_row(form.menuForAt) }}
+        </div>
+    </div>
+    
+    <div class="row d-flex ">  
+        <div class="col-12 col-md-6 mt-1">
+
+            {{ form_label(form.mainPictureFile) }}  
+            {{ form_widget(form.mainPictureFile) }} 
+            {% if form.mainPictureFile.vars.errors|length > 0 %}
+                <div class="form-errors text-red fs-14 fw-600">
+                    {{ form_errors(form.mainPictureFile) }} 
+                </div>
+            {% endif %}
+
+            {% if menu != null %}
+                {% if menu.mainPicture != null %}   
+                    
+                    <div class="image-main-container-menu-form d-flex">
+                        <div class="image-container-menu-form" style="background-image: url( {{ customAsset('data/uploads/menu/photos/' ~ menu.mainPicture ) }} );">
+                        </div>
+
+                        {# <div class="ps-4">
+                            <div class="fs-13">image actuelle du menu</div>
+                            <div>
+                                <a href="#" class="btn btn-very-small btn-red left-icon d-table d-lg-inline-block lg-mb-15px md-mx-auto btn-round-edge-large" 
+                                    data-bs-toggle="modal" data-bs-target="#pictureFileMain-deleteModal-{{ menu.id }}">
+                                    Effacer
+                                </a>
+                            </div>    
+                        </div> #}
+                    </div>
+
+                    <!-- DELETE main picture MODALE -->
+                    {# <div class="modal fade" id="pictureFileMain-deleteModal-{{ menu.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-14">Confirmer la suppression de l'image ?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-footer ">
+                                    <button type="button" class="btn btn-small" data-bs-dismiss="modal">Annuler</button>
+                                    <a href="{{ path('admin_menu_pictureFileMain_delete', {id: menu.id}) }}"
+                                        class="btn btn-small btn-red btn-round-edge-large border-1 w-30">
+                                        Supprimer
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> #}
+                    
+                {% endif %}
+            {% endif %}
+
+        </div>
+
+    </div>
+
+    <div class="row d-flex justify-content-center mt-5">
+        <button type="submit" class="btn btn-medium btn-base-color left-icon d-table d-lg-inline-block lg-mb-15px md-mx-auto border-radius-30px">{{ button_label|default('Enregistrer') }}</button>
+    </div>
+
+{{ form_end(form) }}
+

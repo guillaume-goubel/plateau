@@ -12200,9 +12200,7 @@ blockquote footer {
   will-change: transform;
 }
 .image-gallery-style-01 .gallery-box:hover img {
-  opacity: 0.5;
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
+  opacity: 0.95;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
