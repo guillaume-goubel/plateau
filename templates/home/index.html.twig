@@ -24,7 +24,7 @@
 						<div>
 							<p class="text-black alt-font fs-20 xs-fs-15 xs-lh-20 ls-1px text-uppercase mb-25px sm-mb-15px mt-10px">Voir | Boire | Manger</p>
 
-							<div class="alt-font fs-110 lh-100 xs-fs-80 xs-lh-70 mb-30px xs-mb-15px fancy-text-style-4 d-flex flex-column">
+							<div class="alt-font fs-100 lh-100 xs-fs-80 xs-lh-70 mb-30px xs-mb-15px fancy-text-style-4 d-flex flex-column">
 								<span class=" text-white ls-minus-2px ">Le p<span class="main-banner-letter">l</span>at<span class="main-banner-letter">e</span>au</span>
 								<span data-fancy-text='{ "effect": "rotate", "string": ["restaurant", "bar", "concerts", "privatisation"] }' class="text-outline text-outline text-outline-width-2px sm-text-outline-width-1px text-outline-color-white text-outline-base-color-background"></span>
 							</div>
@@ -58,6 +58,53 @@
 		</div>
 	</section>
 	<!-- end banner -->
+
+	<section class="bg-solitude-blue py-4">
+		<div class="container"> 
+			<div class="row align-items-center justify-content-center"> 
+				<div class="col-12 col-md-9 offset-xl-1" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 150, "staggervalue": 150, "easing": "easeOutQuad" }'>
+					{# <span class="fs-18 fw-600 text-dark-gray mb-20px d-flex align-items-center">En ce moment !</span>  #}
+					<div class="swiper slider-one-slide text-slider-style-01" data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".slider-one-slide-pagination", "clickable": true }, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<div class="row d-flex g-4">
+									<div class="col-12 col-md-2">
+										<img style="width:8rem!important;height:8rem;" src="{{ customAsset('app/pages/home/actu-3.jpg')}}" alt="">
+									</div>
+									<div class="col-12 col-md-10">
+										<h2 class="fw-700 text-dark-gray ls-minus-2px fs-23">After Work du jeudi</h2>
+										<p class="w-80">Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim veniam !</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="row d-flex g-4">
+									<div class="col-12 col-md-2">
+										<img style="width:8rem!important;height:8rem;" src="{{ customAsset('app/main_logo.jpg')}}" alt="">
+									</div>
+									<div class="col-12 col-md-10">
+										<h2 class="fw-700 text-dark-gray ls-minus-2px fs-23">Expo. vive le PSG</h2>
+										<p class="w-80">Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim veniam !</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="d-flex">
+							<!-- start slider navigation -->
+							<div class="slider-one-slide-prev-1 icon-small swiper-button-prev slider-navigation-style-04 bg-white text-dark-gray"><i class="fa-solid fa-arrow-left"></i></div>
+							<div class="slider-one-slide-next-1 icon-small swiper-button-next slider-navigation-style-04 bg-white text-dark-gray"><i class="fa-solid fa-arrow-right"></i></div>
+							<!-- end slider navigation -->
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+        <!-- end section --> 
 
 	<!-- start section -->
 	<section id="about-section" class="position-relative overflow-hidden z-index-0">
@@ -1065,39 +1112,37 @@
 <!-- Menu Modal -->
 <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
  	<div class="modal-dialog modal-dialog-centered">
-		<div class="modal-content" style="height:80vh;overflow:hidden;">
+		<div id="modal-content-menu" class="modal-content" style="height:80vh;overflow:hidden;">
 			{# <div class="modal-header">
 				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
 			</div> #}
 			<div class="modal-body">
-				<div>
-					
-					<div class="d-flex align-items-center justify-content-between mb-8">
-						<h4 class="d-inline-block alt-font text-dark-gray mb-0">Le Plateau propose</h4>
-						<button type="button" class="btn btn-transparent-dark-gray btn-small btn-round-edge btn-box-shadow" data-bs-dismiss="modal">Fermer</button>
-					</div>
+				<div id="modal-content-header" class="d-flex align-items-center justify-content-between mb-2">
+					<h4 class="d-inline-block alt-font text-white mb-0">Le Plateau propose</h4>
+					<button type="button" class="btn btn-transparent-white btn-small btn-round-edge btn-box-shadow" data-bs-dismiss="modal">Fermer</button>
+				</div>
 
-					<ul class="image-gallery-style-05 gallery-wrapper grid grid-1 gutter-small">
-						<li class="grid-sizer"></li> 
-						{% if menu.mainPicture != null %}
-							<li class="grid-item transition-inner-all">
-								<div class="gallery-box">
-									<a href="{{ customAsset('data/uploads/menu/photos/' ~ menu.mainPicture ) }}" data-group="lightbox-gallery" title="">
-										<div class="position-relative gallery-image bg-gray overflow-hidden">
-											<img class="event-photos"  src="{{ customAsset('data/uploads/menu/photos/' ~ menu.mainPicture ) }}" alt="" />
-											<div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
-												<div class="d-flex align-items-center justify-content-center w-50px h-50px rounded-circle bg-dark-gray">
-													<i class="feather icon-feather-search text-white icon-small"></i>
-												</div>
+				<ul class="image-gallery-style-01 gallery-wrapper grid grid-1 gutter-small">
+					<li class="grid-sizer"></li> 
+					{% if menu.mainPicture != null %}
+						<li class="grid-item transition-inner-all">
+							<div class="gallery-box">
+								<a href="{{ customAsset('data/uploads/menu/photos/' ~ menu.mainPicture ) }}" data-group="lightbox-gallery" title="">
+									<div class="position-relative gallery-image bg-red overflow-hidden">
+										<img class="event-photos"  src="{{ customAsset('data/uploads/menu/photos/' ~ menu.mainPicture ) }}" alt="" />
+										<div class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
+											<div class="d-flex align-items-center justify-content-center w-50px h-50px rounded-circle bg-dark-gray">
+												<i class="feather icon-feather-search text-white icon-small"></i>
 											</div>
 										</div>
-									</a>
-								</div>
-							</li>
-						{% endif %}
-					</ul>
-				</div>
+									</div>
+								</a>
+							</div>
+						</li>
+					{% endif %}
+				</ul>
+
 			</div>
 			{# <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>

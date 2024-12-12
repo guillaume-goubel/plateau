@@ -24,10 +24,10 @@
                 <div class="col-10 blog-standard md-mb-50px sm-mb-40px">
                     <div class="row blog-details mb-3 d-flex align-items-center"> 
                         <div class="col-10">
-                            <h5 class="text-dark-gray fw-600 w-80 sm-w-100 mb-1">MENU - Modifier</h5>
+                            <h5 class="text-dark-gray fw-600 w-80 sm-w-100 mb-1">CATEGORIE - Modifier</h5>
                         </div>
                         <div class="admin-action col-2 d-flex justify-content-end">
-                            <a href="{{ path('admin_index')}}">
+                            <a href="{{ path('admin_category_index')}}">
                                 <i class="fa-solid fa-circle-left align-middle icon-large text-base-color me-2"></i>
                             </a>
                         </div>
@@ -36,7 +36,7 @@
 
                 <div class="col-12 col-md-10">
                     <div class="row mb-50px sm-mb-30px">     
-                        {{ include('admin/menu/_form.html.twig') }}
+                        {{ include('admin/category/_form.html.twig') }}
                     </div>
                 </div>
 

@@ -15,26 +15,28 @@
 				</a>
 			</div>
 
-			<div class="header-button me-2">
-				<a onclick="window.location.href=window.location.href" href="{{ path('home_index') }}" class="btn border-1 btn-transparent-white-light border-color-transparent-white-light btn-small left-icon btn-switch-text btn-rounded">
-					<span>
+			<div class="d-flex">
+				<div style="min-width:120px;" class="header-button me-2">
+					<a onclick="window.location.href=window.location.href" href="{{ path('home_index') }}" class="btn border-1 btn-transparent-white-light border-color-transparent-white-light btn-small left-icon btn-switch-text btn-rounded">
 						<span>
-							<i class="feather icon-feather-calendar"></i>
+							<span>
+								<i class="feather icon-feather-calendar"></i>
+							</span>
+							<span class="btn-double-text" data-text="Réserver">Réserver</span>
 						</span>
-						<span class="btn-double-text" data-text="Réserver">Réserver</span>
-					</span>
-				</a>
-			</div>
+					</a>
+				</div>
 
-			<div class="header-button">
-				<a onclick="window.location.href=window.location.href" href="{{ path('home_index') }}" class="btn border-1 btn-transparent-white-light border-color-transparent-white-light btn-small left-icon btn-switch-text btn-rounded">
-					<span>
+				<div style="min-width:120px;" class="header-button">
+					<a onclick="window.location.href=window.location.href" href="{{ path('home_index') }}" class="btn border-1 btn-transparent-white-light border-color-transparent-white-light btn-small left-icon btn-switch-text btn-rounded">
 						<span>
-							<i class="feather icon-feather-clock"></i>
+							<span>
+								<i class="feather icon-feather-clock"></i>
+							</span>
+							<span class="btn-double-text" data-text="horaires">Horaires</span>
 						</span>
-						<span class="btn-double-text" data-text="horaires">Horaires</span>
-					</span>
-				</a>
+					</a>
+				</div>
 			</div>
 
 			<div class="col-auto menu-order position-static">

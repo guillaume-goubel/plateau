@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+{% endblock %}
+
+{% block body %}
+
+    <body data-mobile-nav-style="classic">
+        
+        {{ parent() }}
+
+        <!-- start header -->
+        {% include 'admin/partials/_header_admin.html.twig' %}
+        <!-- end header -->
+
+        <section class="main-section">
+            
+            <div class="container">
+                <div class="row justify-content-center">
+                    
+                    <div class="col-12 col-lg-8 blog-standard mb-50px sm-mb-40px">
+                        
+                        <!-- start blog details  -->
+                        <div class="d-flex blog-details justify-content-between "> 
+
+                            <div class="entry-meta fs-15 col-10">
+                                <div>
+                                    <i class="text-dark-gray feather icon-feather-user"></i>
+                                    {{ app.user.email}}
+                                </div>
+                                <a id="disconnectBtn" href="{{ path('app_logout')}}"><i class="fa-solid fa-power-off icon-medim text-base-color me-1"></i>Déconnexion</a>
+                            </div>
+
+                            <a href="{{ path('admin_category_new') }}" class="col-2">
+                                <i class="fa-solid fa-circle-plus align-middle icon-large text-base-color"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+                        {% for category in categories %}
+                            <div class="row justify-content-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                <div class="col-lg-10 pt-20px pb-20px border-bottom border-color-transparent-white-light">
+                                     <div class="row justify-content-center align-items-center pb-2 border-bottom">
+                                        <div class="col-md-5 col-xl-4 col-lg-4 d-flex justify-content-center justify-content-md-start fs-16 fw-600">{{ category.name|capitalize }}</div>
+                                        <div class="col-md-2 col-xl-1 text-center">
+                                            <a href="{{ path('admin_category_edit', {'id' : category.id }) }}" class="col-2 ">
+                                                <i class="fa-solid fa-pen align-middle icon-medium text-info"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2 col-xl-1 text-center">
+                                            <a data-bs-toggle="modal" data-bs-target="#category-deleteModal-{{ category.id }}" class="col-2">
+                                                <i class="fa-solid fa-trash align-middle icon-medium text-red"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- DELETE main picture MODALE -->
+                            <div class="modal fade" id="category-deleteModal-{{ category.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fs-17 fw-600">Confirmer la suppression ?</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-footer ">
+                                            <button type="button" class="btn btn-medium actions-modals-btn" data-bs-dismiss="modal">Annuler</button>
+                                            <a href="{{ path('admin_category_delete', {id: category.id}) }}"
+                                                class="btn btn-medium actions-modals-btn btn-red btn-round-edge-large border-1 w-30">
+                                                Supprimer
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        {% include 'admin/partials/_footer_minimum.html.twig' %}
+
+    </body>
+
+{% endblock %}
+
+{% block baseJavascripts %}
+    {% block importmap %}
+        {{ importmap(['app', 'base', 'admin']) }}
+    {% endblock %}
+{% endblock %}

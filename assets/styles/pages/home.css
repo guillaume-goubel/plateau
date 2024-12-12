@@ -6,7 +6,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    
     #main-banner-time-infos{
         margin: auto;
         position: absolute;
@@ -25,4 +24,22 @@
 .blog-categories{
     display: flex;
     justify-content: end;
+}
+
+/* MENU MODAL */
+#modal-content-menu{
+    height: 80vh;
+    overflow: hidden;
+    background-color: transparent;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-radius: 0;
+}
+#modal-content-header{
+    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+}
+.modal-backdrop.show {
+    opacity: 0.85;
 }
